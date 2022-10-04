@@ -1,0 +1,19 @@
+.td{
+    width: 150px;
+    text-align: center;
+    height: 50px;
+}
+.table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 65%;
+}
+.tr{
+    background-color: lightgrey;
+}
+.tdr {
+    width: 150px;
+    text-align: center;
+    height: 50px;
+    background-color: lightgrey;
+}

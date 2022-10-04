@@ -7,37 +7,38 @@
     <link rel="stylesheet" type="text/css" href="cssform.css">
 </head>
 <body>
+<form action="Form%20lấy%20survey%20khách%20hàng.html" method="post">
 <h1><b>Market Research Survey</b></h1>
 <p>Please take a few moments to complete this satisfaction survey</p>
 <hr class='dotted' />
-  <label for="age"><b>What is your age range?</b></label><br>
+  <label><b>What is your age range?</b></label><br>
     <select style="width: 50%">
-      <option><label type="radio" id="age" name="agerange" value="18-24">18-24</label></option>
-      <option><label type="radio" id="age" name="agerange" value="25-34">25-34</label></option>
-      <option><label type="radio" id="age" name="agerange" value="35-50">35-50</label></option>
-      <option><label type="radio" id="age" name="agerange" value="50+">50+</label></option>
+      <option><label type="radio" id="agerange1" name="agerange" value="18-24">18-24</label></option>
+      <option><label type="radio" id="agerange2" name="agerange" value="25-34">25-34</label></option>
+      <option><label type="radio" id="agerange3" name="agerange" value="35-50">35-50</label></option>
+      <option><label type="radio" id="agerange4" name="agerange" value="50+">50+</label></option>
     </select><br><br>
-  <label for="age"><b>What is your yearly income range?</b></label><br>
+  <label><b>What is your yearly income range?</b></label><br>
     <select style="width: 50%">
-      <option><label type="radio" id="income" name="incomerange" value="0-25000">$0-$25000</label></option>
-      <option><label type="radio" id="income" name="incomerange" value="25001-50000">$25001-50000</label></option>
-      <option><label type="radio" id="income" name="incomerange" value="50001-100000">$50001-100000</label></option>
-      <option><label type="radio" id="income" name="incomerange" value="100001+">$100001+</label></option>
+      <option><label type="radio" id="range1" name="incomerange" value="0-25000">$0-$25000</label></option>
+      <option><label type="radio" id="range2" name="incomerange" value="25001-50000">$25001-50000</label></option>
+      <option><label type="radio" id="range3" name="incomerange" value="50001-100000">$50001-100000</label></option>
+      <option><label type="radio" id="range4" name="incomerange" value="100001+">$100001+</label></option>
     </select><br><br>
-  <label for="gender"><b>Gender Identity</b></label><br>
-      <label><input type="radio" id="gender" name="gender" value="Male">Male</label><br>
-      <label><input type="radio" id="gender" name="gender" value="Female">Female</label><br>
-      <label><input type="radio" id="gender" name="gender" value="Nonbinary">Nonbinary</label><br>
-      <label><input type="radio" id="gender" name="gender" value="Other" checked>Other</label><br>
+  <label><b>Gender Identity</b></label><br>
+      <label><input type="radio" id="male" name="gender" value="Male">Male</label><br>
+      <label><input type="radio" id="female" name="gender" value="Female">Female</label><br>
+      <label><input type="radio" id="non" name="gender" value="Nonbinary">Nonbinary</label><br>
+      <label><input type="radio" id="other" name="gender" value="Other" checked>Other</label><br>
       <input type="text"><br><br>
-  <label for="product"><b>Which of the following products have you purchased in the last 2 months. Please check all that apply</b></label><br>
-      <label><input type="checkbox" id="product" name="product" value="Product 1">Product 1</label><br>
-      <label><input type="checkbox" id="product" name="product" value="Product 1">Product 2</label><br>
-      <label><input type="checkbox" id="product" name="product" value="Product 1">Product 3</label><br><br>
-  <label for="frequency"><b>How often would you use our new product?</b></label><br>
-      <label><input type="radio" id="frequency" name="frequency" value="Daily">Daily</label><br>
-      <label><input type="radio" id="frequency" name="frequency" value="Weekly">Weekly</label><br>
-      <label><input type="radio" id="frequency" name="frequency" value="Monthly">Monthly</label><br>
+  <label><b>Which of the following products have you purchased in the last 2 months. Please check all that apply</b></label><br>
+      <label><input type="checkbox" id="product1" name="product" value="Product 1">Product 1</label><br>
+      <label><input type="checkbox" id="product2" name="product" value="Product 2">Product 2</label><br>
+      <label><input type="checkbox" id="product3" name="product" value="Product 3">Product 3</label><br><br>
+  <label><b>How often would you use our new product?</b></label><br>
+      <label><input type="radio" id="daily" name="frequency" value="Daily">Daily</label><br>
+      <label><input type="radio" id="weekly" name="frequency" value="Weekly">Weekly</label><br>
+      <label><input type="radio" id="monthly" name="frequency" value="Monthly">Monthly</label><br>
   <label><b>What would you pay for the new product?</b></label><br>
       <table>
         <tr>
@@ -52,6 +53,47 @@
           <td align="left" colspan="2">Cents</td>
         </tr>
       </table>
-  <label
+  <table>
+      <tr>
+          <td><label for="customeropinion"><b>What features would you like to see in the new product?</b></label></td>
+      </tr>
+      <tr>
+          <td>
+              <input type="textarea" id="customeropinion" name="customeropinion" style="width: 253%; height: 250px">
+          </td>
+      </tr>
+  </table><br>
+<label><b>Please rate your level of  agreement with the following statements.</b></label><br>
+<table border="1" class="table">
+    <th class="tr">
+        <td class="tdr">Strongly Disagree</td>
+        <td class="tdr">Disagree</td>
+        <td class="tdr">Agree</td>
+        <td class="tdr">Strongly Agree</td>
+    </th>
+    <tr>
+        <td>Our products are price fairly</td>
+        <td class="td"><input type="radio" id="pricelvagreement1" name="price" value="1"><br>1</td>
+        <td class="td"><input type="radio" id="pricelvagreement2" name="price" value="2"><br>2</td>
+        <td class="td"><input type="radio" id="pricelvagreement3" name="price" value="3"><br>3</td>
+        <td class="td"><input type="radio" id="pricelvagreement4" name="price" value="4"><br>4</td>
+    </tr>
+    <tr class="tr">
+        <td>Our products are high quality</td>
+        <td class="td"><input type="radio" id="qualitylvagreement1" name="quality" value="1"><br>1</td>
+        <td class="td"><input type="radio" id="qualitylvagreement2" name="quality" value="2"><br>2</td>
+        <td class="td"><input type="radio" id="qualitylvagreement3" name="quality" value="3"><br>3</td>
+        <td class="td"><input type="radio" id="qualitylvagreement4" name="quality" value="4"><br>4</td>
+    </tr>
+    <tr>
+        <td>You would recommend our product to a friend or coworker</td>
+        <td class="td"><input type="radio" id="recommendlvagreement1" name="recommend" value="1"><br>1</td>
+        <td class="td"><input type="radio" id="recommendlvagreement2" name="recommend" value="2"><br>2</td>
+        <td class="td"><input type="radio" id="recommendlvagreement3" name="recommend" value="3"><br>3</td>
+        <td class="td"><input type="radio" id="recommendlvagreement4" name="recommend" value="4"><br>4</td>
+    </tr>
+</table><br>
+<input type="submit" id="submit" formaction="Form%20lấy%20survey%20khách%20hàng.html" name="Submit" value="Submit">
+</form>
 </body>
 </html>
