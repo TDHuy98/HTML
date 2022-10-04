@@ -1,4 +1,4 @@
-.td{
+.td {
     width: 150px;
     text-align: center;
     height: 50px;
@@ -8,7 +8,7 @@
     border-collapse: collapse;
     width: 65%;
 }
-.tr{
+.tr:nth-child(odd){
     background-color: lightgrey;
 }
 .tdr {
